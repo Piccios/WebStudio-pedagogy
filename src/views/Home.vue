@@ -3,7 +3,7 @@
     <div>
         <h1>Welcome to your safe space!</h1>
         <p>Discover our products</p>
-        <img src="@/assets/clinical-psychology-doctor-with-patient-on-couch-3847440743.jpg" alt="psychologist img" />
+        <img src="../assets/clinical-psychology-doctor-with-patient-on-couch-3847440743.jpg" alt="psychologist img" />
     </div>
 
     <div>
