@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import AppNavbar from '@/components/AppNavbar.vue';
+import AppNavbar from "./components/AppNavBar.vue";
 
 export default {
   components: {
@@ -15,12 +15,4 @@ export default {
 </script>
 
 <style>
-  .navbar {
-    position: fixed;
-    top: 0;
-    display: flex;
-    gap: 10px;
-    background-color: #f1f1f1;
-    text-align: center;
-  }
 </style>
