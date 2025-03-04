@@ -2,7 +2,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <router-link to="/" class="navbar-brand">Dr. Mario Rossi</router-link>
+                <router-link to="/" class="navbar-brand">Dr.ssa Raffaella Belluomini</router-link>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
