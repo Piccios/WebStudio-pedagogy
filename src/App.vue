@@ -2,7 +2,7 @@
 </script>
 
 <template>
-
+  <AppNavbar />
   <router-view />
 </template>
 
