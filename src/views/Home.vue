@@ -1,18 +1,14 @@
 <template>
 
     <div>
-        <h1>Welcome to your safe space!</h1>
-        <p>Discover our products</p>
+        <h1>Benvenuti!</h1>
+        <h3>Sono Raffaella Belluomini</h3>
+        <p>LA PEDAGOGIA CLINICA E IL CRANIOSACRALE BIODINAMICO IN UN LAVORO INTEGRATO NELL'AIUTO ALLA PERSONA Contattami 3490632534</p>
         <img src="../assets/imgs/clinical-psychology-doctor-with-patient-on-couch-3847440743.jpg" alt="psychologist img" />
     </div>
 
     <div>
-        <h2>Our experts</h2>
-        <ul>
-            <li v-for="doctor in doctors" :key="doctor.id">
-            {{ doctor.name }}
-            </li>
-        </ul>
+
     </div>
 
 </template>
