@@ -9,6 +9,11 @@
             </div>
 
             <div class="mb-3">
+                <label class="form-label">Numero di telefono</label>
+                <input v-model="form.number" class="form-control" placeholder="Il tuo numero di telefono" required>
+            </div>
+
+            <div class="mb-3">
                 <label class="form-label">Email</label>
                 <input v-model="form.email" type="email" class="form-control" placeholder="La tua email" required>
             </div>
@@ -28,7 +33,8 @@
 </template>
 
 <script>
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
+
 
 export default {
     data() {
@@ -36,6 +42,7 @@ export default {
             form: {
                 name: '',
                 email: '',
+                number: '',
                 message: ''
             },
             successMessage: '',
@@ -45,14 +52,17 @@ export default {
     methods: {
         sendEmail() {
             const serviceID = "service_4aqp9bh";  // Sostituisci con il tuo Service ID
-            const templateID = "template_h02ex6s"; // Sostituisci con il tuo Template ID
-            const userID = "l.picchi050896@gmail.com";  
+            const templateID = "template_iz6drkg"; // Sostituisci con il tuo Template ID
+            const userID = "lIWO28Xp95B-wx001"; // Sostituisci con il tuo la Public Key  
 
-            emailjs.send(serviceID, templateID, this.form, userID)
+            emailjs.init(userID); // Inizializza EmailJS
+
+            emailjs.send(serviceID, templateID, this.form)
                 .then(() => {
-                    this.successMessage = "Messaggio inviato con successo!";
+                    this.successMessage = "Messaggio inviato con successo! Grazie per avermi contattato. Ti risponderò al più presto.";
                     this.form.name = "";
                     this.form.email = "";
+                    this.form.number = "";
                     this.form.message = "";
                 })
                 .catch(error => {
